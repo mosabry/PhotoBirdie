@@ -1,0 +1,342 @@
+/*=============================
+
+        Default Values
+
+Font: Raleway
+
+Colors:
+1. Red: #ff5757;
+2. Dark Grey: #111;
+
+==============================*/
+/*------------------------------
+        Basic setup
+------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #111;
+  font-family: "Raleway", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+@media all and (max-width: 1420px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media all and (max-width: 480px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  margin: 10px 0;
+}
+
+/*------------------------------
+        Header Style
+------------------------------*/
+header {
+  width: 100%;
+  background-color: #fff;
+  color: #111;
+}
+header .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.94);
+}
+header .heading-div {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+@media all and (max-width: 768px) {
+  header .heading-div {
+    flex-direction: column;
+  }
+}
+header .heading-div img {
+  width: 120px;
+}
+@media all and (max-width: 768px) {
+  header .heading-div .nav-menu {
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 480px) {
+  header .heading-div .nav-menu {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -120px;
+  }
+}
+header .heading-div .nav-menu a {
+  color: #111;
+  padding: 15px 10px;
+  margin: 0 20px;
+  font-size: 21px;
+  transition: border-bottom 0.3s ease;
+}
+header .heading-div .nav-menu a:hover {
+  border-bottom: 3px solid #ff5757;
+}
+@media all and (max-width: 768px) {
+  header .heading-div .nav-menu a {
+    font-size: 18px;
+    padding: 5px;
+    margin: 0 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  header .heading-div .nav-menu a {
+    font-size: 24px;
+    margin: 20px;
+  }
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: none;
+}
+@media all and (max-width: 480px) {
+  .hamburger-menu {
+    display: inline;
+  }
+}
+.hamburger-menu .hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #111;
+  border-radius: 10%;
+  margin: 5px;
+}
+
+/*------------------------------
+        Header Section
+------------------------------*/
+.header-section {
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
+}
+
+/*------------------------------
+        About Section
+------------------------------*/
+.about-me {
+  margin-top: 100px;
+}
+.about-me p {
+  margin: 70px 0;
+  text-align: justify;
+}
+.about-me .my-images {
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 768px) {
+  .about-me .my-images {
+    flex-direction: column;
+  }
+}
+.about-me .my-images .image {
+  width: 30%;
+}
+@media all and (max-width: 768px) {
+  .about-me .my-images .image {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+.about-me .my-images .image img {
+  width: 100%;
+}
+.about-me .my-images .image h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+/*------------------------------
+        Portfolio Section
+------------------------------*/
+.portfolio {
+  margin-top: 100px;
+}
+.portfolio .portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin-top: 70px;
+}
+.portfolio .portfolio-items img {
+  width: 32%;
+  margin-bottom: 30px;
+}
+@media all and (max-width: 768px) {
+  .portfolio .portfolio-items img {
+    width: 47%;
+  }
+}
+
+/*------------------------------
+        Blog Section
+------------------------------*/
+.blog {
+  margin-top: 80px;
+}
+.blog .blog-text {
+  margin-top: 70px;
+}
+.blog .blog-text img {
+  width: 300px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+@media all and (max-width: 768px) {
+  .blog .blog-text img {
+    float: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+.blog .blog-text p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+/*------------------------------
+        Contact Section
+------------------------------*/
+.contact {
+  margin-top: 100px;
+}
+
+form {
+  text-align: center;
+  margin-top: 55px;
+}
+form label {
+  font-size: 18px;
+  color: #111;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+form input, form textarea {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #111;
+  width: 70%;
+  padding: 7px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media all and (max-width: 768px) {
+  form input, form textarea {
+    width: 95%;
+  }
+}
+form textarea {
+  resize: none;
+}
+form button {
+  background-color: #111;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+form button:hover {
+  background-color: #fff;
+  color: #ff5757;
+  border: 2px solid #ff5757;
+}
+
+/*------------------------------
+        Footer Section
+------------------------------*/
+footer {
+  background-color: #111 !important;
+  color: #fff;
+  margin-top: 70px !important;
+}
+footer p {
+  text-align: center;
+  padding: 20px;
+}
+footer p a {
+  color: #ff5757;
+  transition: all 0.3 ease-out;
+}
+footer p .left {
+  position: relative;
+}
+footer p .left::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff5757;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+footer p .left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

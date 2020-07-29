@@ -1,0 +1,40 @@
+/*------------------------------
+        Footer Section
+------------------------------*/
+
+footer {
+    background-color: $Dark-Grey !important;
+    color: #fff;
+    margin-top: 70px !important;
+
+    p {
+        text-align: center;
+        padding: 20px;
+
+        a {
+            color: $Red;
+            transition: all 0.3 ease-out;
+        }
+
+        .left {
+            position: relative;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background-color: $Red;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            &:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+        }
+    }
+}

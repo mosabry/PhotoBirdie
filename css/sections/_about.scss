@@ -1,0 +1,43 @@
+/*------------------------------
+        About Section
+------------------------------*/
+
+.about-me {
+    margin-top: 100px;
+
+    p {
+        margin: 70px 0;
+        text-align: justify;
+    }
+
+    .my-images {
+        display: flex;
+        justify-content: space-between;
+
+        @media all and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .image {
+            width: 30%;
+
+            @media all and (max-width: 768px) {
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 10px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+

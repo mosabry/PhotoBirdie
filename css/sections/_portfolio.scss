@@ -1,0 +1,23 @@
+/*------------------------------
+        Portfolio Section
+------------------------------*/
+
+.portfolio {
+    margin-top: 100px;
+
+    .portfolio-items {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        margin-top: 70px;
+
+        img {
+            width: 32%;
+            margin-bottom: 30px;
+
+            @media all and (max-width: 768px) {
+                width: 47%;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/*------------------------------
+        Contact Section
+------------------------------*/
+
+.contact {
+    margin-top: 100px;
+}
+
+form {
+    text-align: center;
+    margin-top: 55px;
+
+    label {
+        font-size: 18px;
+        color: $Dark-Grey;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    input, textarea {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid $Dark-Grey;
+        width: 70%;
+        padding: 7px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        @media all and (max-width: 768px) {
+            width: 95%;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        background-color: $Dark-Grey;
+        color: #fff;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: all .3s ease-out;
+
+        &:hover {
+            background-color: #fff;
+            color: $Red;
+            border: 2px solid $Red;
+        }
+    }
+}

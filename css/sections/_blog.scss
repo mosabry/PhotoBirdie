@@ -1,0 +1,30 @@
+/*------------------------------
+        Blog Section
+------------------------------*/
+
+.blog {
+    margin-top: 80px;
+
+    .blog-text {
+        margin-top: 70px;
+
+        img {
+            width: 300px;
+            float: left;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+            @media all and (max-width: 768px) {
+                float: none;
+                padding: 0;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+}
